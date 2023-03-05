@@ -1,0 +1,14 @@
+.input__filed {
+  position: relative;
+  color: var(--bs-primary);
+  line-height: 30px;
+  border: 2px dotted var(--bs-primary);
+  padding: 5px 20px;
+  font-weight: bold;
+}
+
+.input__file {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

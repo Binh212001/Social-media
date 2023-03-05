@@ -1,0 +1,34 @@
+.search {
+  background-color: var(--gray-200);
+  padding: 3px 5px;
+  border-radius: var(--bd-5);
+
+  &__input {
+    background-color: transparent;
+    border: var(--gray-200);
+    caret-color: red;
+    font-size: 14px;
+  }
+}
+
+.mode {
+  background-color: var(--gray-200);
+  border-radius: 10px;
+  width: 40px;
+}
+
+.menu__hover:hover {
+  background-color: #e0dfdf;
+}
+
+.logout__item {
+  border-radius: var(--bd-5);
+  width: 150px;
+  transform: translateX(-50%);
+  background-color: rgb(220, 218, 218);
+  cursor: pointer;
+  display: none;
+}
+.logout:hover .logout__item {
+  display: block;
+}

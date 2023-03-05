@@ -1,0 +1,16 @@
+:root {
+  --color-blue: #05b2ec;
+  --white: #fff;
+  --gray-200: #e9ecef;
+  --bd-5: 5px;
+  --bd-30: 30px;
+  --bg-main: #e9ecef;
+  --bg-mode: #fff;
+  --text: #333;
+}
+
+[data-theme='dark'] {
+  --bg-main: #000;
+  --bg-mode: #2f2e2e;
+  --text: #fff;
+}

@@ -1,0 +1,9 @@
+.box__friend {
+  border-radius: var(--bd-5);
+  overflow: hidden;
+
+  &__name {
+    bottom: 0;
+    left: 16px;
+  }
+}
