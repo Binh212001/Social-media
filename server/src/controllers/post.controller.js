@@ -1,6 +1,7 @@
 const responseHandler = require('../handlers/response.handler');
 const Post = require('../models/post.model');
 const { pagination } = require('../utils/pagination');
+const fs = require('fs');
 //@@@@------------------Create Post-----------
 const createPost = async (req, res) => {
   const {
@@ -43,10 +44,16 @@ const createPost = async (req, res) => {
 //@@@@------------------Remove Post-----------
 
 const removePost = async (req, res) => {
-  const { postId } = req.body;
+  const { postId, picturePath } = req.body;
   try {
     const postDeleted = await Post.findByIdAndDelete(postId);
+    fs.unlink('src/public/images/' + picturePath, (err) => {
+      if (err) {
+        throw err;
+      }
 
+      console.log('Delete File successfully.');
+    });
     responseHandler.ok(res, postDeleted);
   } catch (error) {
     responseHandler.internalServer(res, error);

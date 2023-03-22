@@ -40,6 +40,7 @@ function PostItem({ post, myPost }) {
       await postApi.remove({
         postId,
         userId: user._id,
+        picturePath: picturePath,
       });
       dispatch(remove(postId));
     } catch (error) {

@@ -61,7 +61,8 @@ Content-Type: application/json
 
 {
     "postId":"63fb6b0ab112f0b0b3253426",
-    "userId":"63fb61863bbed6c4a957b2be" 
+    "userId":"63fb61863bbed6c4a957b2be" ,
+    "picturePath":"1677836156328p10.jpeg"
 }
 
 ###get List post

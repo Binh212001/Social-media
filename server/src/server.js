@@ -28,9 +28,11 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 route(app);
-app.post('/api/v1/upload/image', upload.single('picture'), (req, res, next) => {
-  console.log(req.body);
-});
+app.post(
+  '/api/v1/upload/image',
+  upload.single('picture'),
+  (req, res, next) => {},
+);
 mongoose.set('strictQuery', true);
 mongoose
 
